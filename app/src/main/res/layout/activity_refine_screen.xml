@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#143E59"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_navi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/back_navi"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/back_navi" />
+
+    <TextView
+        android:id="@+id/refine_label_text"
+        android:layout_width="86dp"
+        android:layout_height="39dp"
+        android:gravity="bottom"
+        android:text="Refine"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toEndOf="@+id/back_navi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select Your Availability"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Yout Status"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Select Hyper local Distance"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Select Purpose"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="319dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="321dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/search_bar_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="311dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:text="1 Km"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="100 Km"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Save &amp; Explore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dating"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ToggleButton
+        android:id="@+id/coffee"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_toggle_off"
+        android:text="Toggle"
+        android:textColor="@color/btnDisableFG"
+        android:textOff="Hobbies"
+        android:textOn="Hobbies"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/movies"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <ToggleButton
+        android:id="@+id/business"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_toggle_off"
+        android:text="Toggle"
+        android:textColor="@color/btnDisableFG"
+        android:textOff="Dinning"
+        android:textOn="Dinning"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/dating"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/dining"
+        app:layout_constraintTop_toBottomOf="@+id/coffee"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/hobbies"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rounded_toggle_on"
+        android:text="Toggle"
+        android:textColor="#FFFFFF"
+        android:textOff="Business"
+        android:textOn="Business"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coffee"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/friends"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <ToggleButton
+        android:id="@+id/friends"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_toggle_on"
+        android:text="Toggle"
+        android:textColor="#FFFFFF"
+        android:textOff="Coffee"
+        android:textOn="Coffee"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ToggleButton
+        android:id="@+id/movies"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_toggle_off"
+        android:text="Toggle"
+        android:textColor="@color/btnDisableFG"
+        android:textOff="Friendship"
+        android:textOn="Friendship"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ToggleButton
+        android:id="@+id/dining"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_toggle_off"
+        android:text="Toggle"
+        android:textColor="@color/btnDisableFG"
+        android:textOff="Dating"
+        android:textOn="Dating"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/matrimony"
+        app:layout_constraintTop_toBottomOf="@+id/hobbies"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/dating"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_toggle_off"
+        android:text="Toggle"
+        android:textColor="@color/btnDisableFG"
+        android:textOff="Matrimony"
+        android:textOn="Matrimony"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movies" />
+
+    <ToggleButton
+        android:id="@+id/matrimony"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_toggle_on"
+        android:text="Toggle"
+        android:textColor="#FFFFFF"
+        android:textOff="Movies"
+        android:textOn="Movies"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friends" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

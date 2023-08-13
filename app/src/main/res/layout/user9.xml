@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/bigger_rectangle"
+        android:layout_width="226dp"
+        android:layout_height="154dp"
+        android:background="@drawable/search_bar_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279">
+
+        <LinearLayout
+            android:layout_width="129dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="53dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Patrick Bateman" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Broker" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Within 400-500 m" />
+
+            <ImageView
+                android:id="@+id/prog_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:contentDescription="prog bar"
+                android:padding="2dp"
+                android:src="@drawable/bar_shape" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="41dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coffee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paul Allen" />
+
+            <TextView
+                android:id="@+id/connections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open to new connections" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp"
+            android:text="+INVITE"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/smaller_rectangle"
+        android:layout_width="68dp"
+        android:layout_height="79dp"
+        android:background="@drawable/search_bar_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/patrick_bateman"
+                app:srcCompat="@drawable/patrick_bateman" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="129dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="53dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Kalash Bharti" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Delhi | Developer" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Within 400-500 m" />
+
+            <ImageView
+                android:id="@+id/prog_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:contentDescription="prog bar"
+                android:padding="2dp"
+                android:src="@drawable/bar_shape" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
